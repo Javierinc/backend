@@ -1,1 +1,1 @@
-[{"id":1,"title":"Jordan","price":39949,"thumbnail":"https://i.ibb.co/nCKcTQG/buddha.png"},{"id":3,"title":"Balenciaga","price":45900,"thumbnail":"https://i.ibb.co/nCKcTQG/buddha.png"},{"id":4,"title":"Adidas","price":82900,"thumbnail":"https://i.ibb.co/nCKcTQG/buddha.png"}]
+[]
