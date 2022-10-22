@@ -47,6 +47,7 @@ class ContenedorArchivo {
     // Elimina todos los productos del contenedor
     async deleteAll(){
         try {
+            this.#container = []
             await fs.promises.writeFile(this.#path, '[]')
         } catch (error) {
             throw error
