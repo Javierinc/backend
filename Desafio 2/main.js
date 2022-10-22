@@ -4,7 +4,7 @@ const { ContenedorArchivo } = require('./container')
 const {zapatillas, buzo, cinturon, gorra}= require('./products')
 // Función para probar el código
 const test = async ()=>{
-    const products = new ContenedorArchivo('./db.txt')
+    const products = new ContenedorArchivo('./productos.txt')
     //Guarda productos
     await products.save(zapatillas)
     await products.save(buzo)
