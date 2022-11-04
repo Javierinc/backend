@@ -1,6 +1,9 @@
 //Importaciones
 const express = require('express');
 const { ContenedorArchivo } = require('./container');
+const cripto = require('crypto')
+const id = cripto.randomUUID
+
 
 //Instanciación de la clase ContenedorArchivo
 const products = new ContenedorArchivo('./productos.txt');
