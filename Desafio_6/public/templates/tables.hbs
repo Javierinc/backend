@@ -1,0 +1,33 @@
+<div class="container mt-4">
+    <h3 class="text-center mb-4">PRODUCTS STOCK</h3>
+    {{#if products}}
+    <table class="table">
+          <thead>
+            <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Price</th>
+            <th scope="col">Thumbnail URL</th>
+            </tr>
+        </thead>
+        {{#each products}}
+        <tbody>
+            <tr>
+                <th scope="col">
+                    {{this.title}}
+                </th>
+                <th scope="col">
+                    {{this.price}}
+                </th>
+                <th scope="col">
+                    <img src="{{this.thumbnail}}" alt="" style="max-width: 100px;">
+                </th>
+            </tr>
+        </tbody>
+
+        {{/each}}
+    </table>
+    {{else}}
+    <p>No products register</p>
+    {{/if}}
+    {{!-- <button onclick="window.location.href='http://localhost:8080/'" class="btn btn-secondary">Go to Register Products</button>   --}}
+</div>

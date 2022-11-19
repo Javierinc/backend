@@ -1,0 +1,22 @@
+<h3>Chat</h3>
+<div>
+    {{#if messages}}
+    <div class="chat-messages">
+        {{#each messages}}
+        <div id="container-messages">
+            <div>
+                <span>Date:</span><p>{{this.date}}</p>
+            </div>
+            <div>
+                <span>Sender:</span><p>{{this.sender}}</p>
+            </div>
+            <div>
+                <span>Message:</span><p>{{this.content}}</p>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    {{else}}
+    <p>No chats</p>
+    {{/if}}
+</div>

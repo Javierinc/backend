@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    
+    color: white;
+}
+body{
+    background-color: #1d1e26;
+}
+h1{
+    text-align: center;
+    margin-top: 2rem;
+}
+.main-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: .5rem;
+    gap: 4.5rem;
+    padding-block: 1rem;
+    width: 85%;
+    margin-inline: auto;
+}
+
+
+.form-section{
+    margin: 1rem;
+    
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    background-color: #282A36;
+    padding: 2rem;
+    box-shadow: 0 4px 16px rgb(26 26 26 / 10%);
+    border-radius: 0.5rem;
+}
+
+input[type = 'text'] {
+    width: 20rem;
+    border: 1px solid rgb(169, 169, 169);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    color: black;
+}
+input[type = 'email']{
+    width: 20rem;
+    border: 1px solid rgb(169, 169, 169);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    color: black;
+}
+
+.btn {
+    border: none;
+    background-color: #088efce4;
+    color: white;
+    height: 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    position: relative;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+.btn:hover{
+    background-color: #087ddde4;
+}
+
+#chat-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: .5rem;
+    gap: 4.5rem;
+    padding-block: 1rem;
+    width: 85%;
+    margin-inline: auto;
+}
+
+#chat-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    background-color: #282A36;
+    padding: 2rem;
+    box-shadow: 0 4px 16px rgb(26 26 26 / 10%);
+    border-radius: 0.5rem; 
+}
+
+#container-messages {
+    background-color: #333645 ;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    padding: 1rem;
+}
