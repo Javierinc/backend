@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>STREET WEAR STORE</h1>
+        <section class="main-section">
+            <section class="form-section">
+                <form id="formulario">
+                    <label for="title">Name Product</label>
+                    <input type="text" placeholder="Jeans" name="title" required>
+                    <label for="price">Price</label> 
+                    <input type="text" placeholder="3600" name="price" required>
+                    <label for="thumbnail">Thumbnail URL</label>
+                    <input type="text" placeholder="https://jeans.picture.com/jpg" name="thumbnail" required>
+                    <button class="btn">Send</button>    
+                </form>
+            </section>
+            <section id="table-products">
+            </section>
+        </section>
+        <section id="chat-section">
+            <section id="container-chat">
+                <form id="chat-form">
+                    <label for="sender">Email sender</label>
+                    <input type="email" placeholder="johndoe@gmail.com" name="sender" required>
+                    <label for="content">Content</label>
+                    <input type="text" placeholder="Hi Street wear store 🖐️" name="content" required>
+                    <button class="btn">Send</button>
+                </form>
+            </section>
+            <section id="chat"></section>
+        </section>    
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
